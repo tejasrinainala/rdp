@@ -1,0 +1,10 @@
+- Take a curve composed of points
+- Mark the start and end points of the curve 
+- Find the distance between start point and end point
+- Now,draw a line connecting start and end point directly
+- Draw the line perpendicular to the previous line from each pont of the curve
+- Find the farthest distance from all those perpendiculars 
+- This divides the curve into parts and the same algorithm is applied 
+- If the farthest point is greater than the epsilon point then consider it else discard it
+- Now the algorithm recursively calls itself i.e, from the first to the farthest point and farthest to end point
+- When the recursion is completed new curve is generated with fewer points.
